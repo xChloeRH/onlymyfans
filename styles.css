@@ -17,21 +17,35 @@ body {
     box-sizing: border-box;
 }
 
-.sidebar .profile-icon {
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-icon {
     width: 50px;
     height: 50px;
     background-color: #ccc;
     border-radius: 50%;
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 10px;
 }
 
-.sidebar .profile-icon img {
+.profile-icon img {
     width: 100%;
     height: auto;
     border-radius: 50%;
+}
+
+.login-text {
+    text-decoration: none;
+    color: #00aaff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 50px; /* Vertically center the text */
 }
 
 .sidebar nav ul {
@@ -45,7 +59,19 @@ body {
 
 .sidebar nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    background-color: #00aaff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 35%;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #d0d0d0;
 }
 
 .main-content {
